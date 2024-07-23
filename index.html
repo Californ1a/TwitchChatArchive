@@ -61,7 +61,7 @@
 				htmlString += '<ul>';
 				for (const file2 of sortedData) {
 					if (file2.name.endsWith('.html')) {
-						htmlString += `<li><a href="${file2.path}">${file2.name}</a></li>`;
+						htmlString += `<li><a href="${encodeURIComponent(file2.path)}">${file2.name}</a></li>`;
 					}
 				}
 				htmlString += '</ul>';
